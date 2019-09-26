@@ -1,5 +1,5 @@
 window.onload = function () {
-    var logo = document.querySelector(".logo"),
+    const logo = document.querySelector(".logo"),
         logoRed = document.querySelector(".logo-red"),
         wrapp = document.querySelector(".wrapper"),
         wrapp_img = document.querySelector(".wrapper__img"),
@@ -21,7 +21,7 @@ window.onload = function () {
         buy_5 = document.querySelector(".buy__arrow"),
         buy_6 = document.querySelector(".buy__specialprice");
 
-    var timeline = new TimelineMax({repeat: -1, yoyo: false});
+    let timeline = new TimelineMax({repeat: -1, yoyo: false});
 
     function restartAnimation() {
         timeline.restart();
